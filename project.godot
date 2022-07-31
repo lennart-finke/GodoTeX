@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+}
+
+[application]
+
+config/name="GodoTeX"
+run/main_scene="res://sample/Environment.tscn"
+config/icon="res://addons/GodoTeX/icon.svg"
+
+[editor_plugins]
+
+enabled=PoolStringArray(  )
+
+[mono]
+
+export/include_scripts_content=true
+runtime/unhandled_exception_policy=1
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0.941176, 0.909804, 0.909804, 1 )
