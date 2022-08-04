@@ -20,7 +20,7 @@ config/icon="res://addons/GodoTeX/icon.svg"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "res://addons/GodoTeX/plugin.cfg" )
 
 [mono]
 

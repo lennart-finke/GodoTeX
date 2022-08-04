@@ -3,7 +3,7 @@ using Godot;
 using System;
 
 [Tool]
-public class GodoTeXPlugin : EditorPlugin {
+public class GodoTeX : EditorPlugin {
 	public override void _EnterTree() {
 		var script = GD.Load<Script>("addons/GodoTeX/LaTeX.cs");
 		var texture = GD.Load<Texture>("addons/GodoTeX/icon.svg");
