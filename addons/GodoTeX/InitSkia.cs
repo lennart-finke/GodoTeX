@@ -1,6 +1,6 @@
 using System.Linq;
 
-// Kind courtesy of Matt Leibow
+// Kind courtesy of Mattew Leibowitz
 // See https://github.com/mono/SkiaSharp/issues/2200
 
 // This fixes the build configuration on Linux and will become obsolete in 
