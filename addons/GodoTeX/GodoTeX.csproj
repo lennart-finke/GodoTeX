@@ -1,0 +1,16 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>GodoTeX</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpMath" Version="0.5.1" />
+    <PackageReference Include="CSharpMath.SkiaSharp" Version="0.5.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.1-preview.104"/>
+  </ItemGroup>
+
+</Project>
