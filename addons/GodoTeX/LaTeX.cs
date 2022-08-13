@@ -83,10 +83,6 @@ public class LaTeX : Sprite {
 	// This is not done automatically so that you can change the values very
 	// often, say multiple times a millisecond, without significant slowdown.
 	public void Render() {
-		if (Godot.OS.GetName() == "X11") {
-			InitSkia.Init();
-		}
-		
 		var r = (byte)(255*this.MathColor.r);
 		var g = (byte)(255*this.MathColor.g);
 		var b = (byte)(255*this.MathColor.b);
