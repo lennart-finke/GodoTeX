@@ -51,6 +51,26 @@ public class LaTeX : Sprite {
 		}
 	}
 	
+	public bool Fill = true;
+	[Export]
+	private bool _fill {
+		get {return Fill;}
+		set {
+			Fill = value;
+			Render();
+		}
+	}
+	
+	public bool ShowError = true;
+	[Export]
+	private bool _showError {
+		get {return ShowError;}
+		set {
+			ShowError = value;
+			Render();
+		}
+	}
+	
 	private MathPainter Painter = new MathPainter{};
 	
 	// These are the measures of the generated image.
@@ -72,7 +92,12 @@ public class LaTeX : Sprite {
 		var b = (byte)(255*this.MathColor.b);
 		var a = (byte)(255*this.MathColor.a);
 		
-		this.Painter = new MathPainter {AntiAlias = this.AntiAliasing, TextColor = new SKColor(r, g, b, a), FontSize = this._fontSize, LaTeX = @"\raisebox{50mu}{}\raisebox{-50mu}{}" + this._latexExpression + @"\:\raisebox{1mu}"};
+		var paintStyle = CSharpMath.Rendering.FrontEnd.PaintStyle.Stroke;
+		if (this.Fill) {
+			paintStyle = CSharpMath.Rendering.FrontEnd.PaintStyle.Fill;
+		}
+		
+		this.Painter = new MathPainter {AntiAlias = this.AntiAliasing, TextColor = new SKColor(r, g, b, a), FontSize = this._fontSize, LaTeX = @"\raisebox{50mu}{}\raisebox{-50mu}{}" + this._latexExpression + @"\:\raisebox{1mu}", DisplayErrorInline = this.ShowError, PaintStyle = paintStyle};
 		
 		var measure = this.Painter.Measure();
 		this.Width = measure.Width;
