@@ -1,8 +1,7 @@
 using Godot;
 
-
 [Tool]
-public class LaTeX : Sprite {
+public class LaTeXButton : TextureButton {
 	// The following wordy declarations ensure that changing the properties 
 	// inside the editor causes the expression to re-render.
 	
@@ -48,16 +47,6 @@ public class LaTeX : Sprite {
 		}
 	}
 	
-	public bool Fill = true;
-	[Export]
-	private bool _fill {
-		get {return Fill;}
-		set {
-			Fill = value;
-			Render();
-		}
-	}
-	
 	public bool ShowError = true;
 	[Export]
 	private bool _showError {
@@ -68,28 +57,43 @@ public class LaTeX : Sprite {
 		}
 	}
 	
-	// These are the measures of the generated image.
-	public float Width;
-	public float Height;
-	public float OffsetX;
-	public float OffsetY;
-	
-	// You may call this from outside to re-render the expression.
-	// This is not done automatically so that you can change the values very
-	// often, say multiple times a millisecond, without significant slowdown.
 	public void Render() {
 		var texture = new LaTeXture();
 		texture.LatexExpression = this.LatexExpression;
 		texture.FontSize = this.FontSize;
 		texture.AntiAliasing = this.AntiAliasing;
-		texture.Fill = this.Fill;
+		texture.Fill = false;
 		texture.ShowError = this.ShowError;
 		texture.Render();
-		this.Texture = texture;
-		this.Width = texture.Width;
-		this.Height = texture.Height;
-		this.OffsetX = texture.OffsetX;
-		this.OffsetY = texture.OffsetY;
+		
+		this.TextureNormal = texture;
+		
+		var texture2 = new LaTeXture();
+		texture2.LatexExpression = this.LatexExpression;
+		texture2.FontSize = this.FontSize;
+		texture2.AntiAliasing = this.AntiAliasing;
+		texture2.Fill = true;
+		texture2.ShowError = this.ShowError;
+		texture2.Render();
+		
+		this.TextureHover = texture2;
+		
+		// A bit of a hack, we increase the top spacing in the LaTeX expression
+		// to give a 'pressed down' effect.
+		var texture3 = new LaTeXture();
+		texture3.LatexExpression = @"\raisebox{41mu}{}" + this.LatexExpression;
+		texture3.FontSize = this.FontSize;
+		texture3.AntiAliasing = this.AntiAliasing;
+		texture3.Fill = true;
+		texture3.ShowError = this.ShowError;
+		texture3.Render();
+		
+		this.TexturePressed = texture3;
+		
+		var clickMask = new BitMap();
+		clickMask.Create(new Vector2(texture.Width, texture.Height));
+		clickMask.SetBitRect(new Rect2(0, 35, texture.Width, texture.Height - 70), true);
+		this.TextureClickMask = clickMask;
 	}
 	
 	public override void _Ready() {

@@ -24,8 +24,8 @@ enabled=PoolStringArray( "res://addons/GodoTeX/plugin.cfg" )
 
 [mono]
 
-export/include_scripts_content=true
 runtime/unhandled_exception_policy=1
+export/include_scripts_content=true
 
 [physics]
 
