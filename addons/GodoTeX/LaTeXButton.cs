@@ -63,6 +63,7 @@ public class LaTeXButton : TextureButton {
 		texture.FontSize = this.FontSize;
 		texture.AntiAliasing = this.AntiAliasing;
 		texture.Fill = false;
+		texture.MathColor = this.MathColor;
 		texture.ShowError = this.ShowError;
 		texture.Render();
 		
@@ -73,6 +74,7 @@ public class LaTeXButton : TextureButton {
 		texture2.FontSize = this.FontSize;
 		texture2.AntiAliasing = this.AntiAliasing;
 		texture2.Fill = true;
+		texture2.MathColor = this.MathColor;
 		texture2.ShowError = this.ShowError;
 		texture2.Render();
 		
@@ -85,6 +87,7 @@ public class LaTeXButton : TextureButton {
 		texture3.FontSize = this.FontSize;
 		texture3.AntiAliasing = this.AntiAliasing;
 		texture3.Fill = true;
+		texture3.MathColor = this.MathColor;
 		texture3.ShowError = this.ShowError;
 		texture3.Render();
 		

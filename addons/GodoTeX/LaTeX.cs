@@ -83,6 +83,7 @@ public class LaTeX : Sprite {
 		texture.FontSize = this.FontSize;
 		texture.AntiAliasing = this.AntiAliasing;
 		texture.Fill = this.Fill;
+		texture.MathColor = this.MathColor;
 		texture.ShowError = this.ShowError;
 		texture.Render();
 		this.Texture = texture;

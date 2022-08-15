@@ -28,6 +28,7 @@ texture = SubResource( 3 )
 offset = Vector2( 100, 100 )
 script = ExtResource( 1 )
 _latexExpression = "\\int_0^\\infty \\Gamma \\text{odot} \\;\\; \\text{says} \\;\\; \\hbar\\text{ello!}"
+_mathColor = Color( 0.713726, 0.411765, 0.411765, 1 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
 margin_left = -59.0
