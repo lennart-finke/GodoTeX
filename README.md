@@ -18,7 +18,7 @@ GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the edito
 The add-on is tested for Godot 3.4.x and is expected to run on 3.x. Support for Windows and Linux is planned. MacOS is sadly not being tested due to lack of appropriate hardware. A version for Godot 4.x will be provided after its release, if possible.
 
 ## Usage
-A custom node `LaTeX` inheriting from `Sprite` is provided and may be instanced like any other. It has the following properties, which may be updated in the editor or programmatically at runtime
+A custom node `LaTeX`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/icon.svg?raw=true)) inheriting from `Sprite` is provided and may be instanced like any other. It has the following properties, which may be updated in the editor or programmatically at runtime
 
 - **LatexExpression**: A `string` containing the expression to be rendered. If invalid, the corresponding error message will be rendered instead.
 - **FontSize**: A `float`, the font size in points. It essentially controls the resolution of the rendered image. Decrease for better performance, increase for higher fidelity.
@@ -27,8 +27,14 @@ A custom node `LaTeX` inheriting from `Sprite` is provided and may be instanced 
 
 When updating these in the editor, the expression is automatically rendered anew. When updating properties programmatically, you decide yourself when to render by calling the `.Render()` method - to save ressources. Rendering very often (several times a millisecond) may result in errors.
 
+There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
+
+***
+
+For a list of LaTeX examples that can be rendered, see [here](https://github.com/kostub/iosMath/blob/master/EXAMPLES.md).
+
 ## Heritage
-The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package.
+The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. If you want to integrate this into your existing Godot Mono project, you reference it in your project's `.csproj`-file, as demonstrated in `GodoTeX.csproj`.
 
 ## License
 Licensed under MIT. © 2022 fi-le
