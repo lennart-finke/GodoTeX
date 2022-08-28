@@ -15,7 +15,7 @@ GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the edito
 - Anti-Aliasing (with Toggle)
 
 ## Compatibility
-The add-on is tested for Godot 3.4.x and is expected to run on 3.x. Support for Windows and Linux is planned. MacOS is sadly not being tested due to lack of appropriate hardware. A version for Godot 4.x will be provided after its release, if possible.
+The add-on is tested for Godot 3.5.x and is expected to run on 3.x. Support for Windows and Linux is planned. MacOS is sadly not being tested due to lack of appropriate hardware. A version for Godot 4.x will be provided after its release, if possible.
 
 ## Usage
 ![](https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latexDemo.gif?raw=true)
@@ -30,14 +30,14 @@ A custom node `LaTeX`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/a
 When updating these in the editor, the expression is automatically rendered anew. When updating properties programmatically, you decide yourself when to render by calling the `.Render()` method - to save ressources. Rendering very often (several times a millisecond) may result in errors.
 
 There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
-
+![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/button.gif?raw=true)
 ***
 
 For a list of LaTeX examples that can be rendered, see [here](https://github.com/kostub/iosMath/blob/master/EXAMPLES.md).
 
 ## Installation
 1. Create a Godot Mono project and build a C#-script.
-2. Install from the Godot Asset Store from inside the Engine or by cloning.
+2. Install from the Godot Asset Store from inside the Engine or by cloning. When including in an existing project, you won't need the `*.godot` and `*.sln`.
 3. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You to integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`.
 4. Enable the addon in the settings, as usual. You can now create a `LaTeX` node and start your math excapades!
 
