@@ -7,7 +7,7 @@ GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the edito
 ***Note**: This is still an early version and may change significantly. The project will be finished by October 2022.*
 
 ## Features
-- It's *really* fast!
+- It's pretty fast!
 - Editor Integration
 - Inherits all Functionality from [`Sprite`](https://docs.godotengine.org/en/stable/classes/class_sprite.html?highlight=sprite)
 - Adjustable Font Size
@@ -34,6 +34,8 @@ There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blo
 ***
 
 For a list of LaTeX examples that can be rendered, see [here](https://github.com/kostub/iosMath/blob/master/EXAMPLES.md).
+
+A demo is available [here](https://github.com/file-acomplaint/Emmy-s-Adventure).
 
 ## Installation
 1. Create a Godot Mono project and build a C#-script.
