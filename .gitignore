@@ -6,6 +6,7 @@
 .import/
 export.cfg
 export_presets.cfg
+*.godot
 
 # Imported translations (automatically generated from CSV files)
 *.translation
@@ -15,4 +16,5 @@ export_presets.cfg
 data_*/
 mono_crash.*.json
 .vs
+*.sln
 

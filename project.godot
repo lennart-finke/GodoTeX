@@ -33,4 +33,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/filters/sharpen_intensity=1.0
 environment/default_clear_color=Color( 0.941176, 0.909804, 0.909804, 1 )
+quality/filters/msaa=4
+quality/filters/use_fxaa=true
