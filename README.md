@@ -1,10 +1,12 @@
 # $\text{Godo}\TeX$
 
+
 GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime!
+<p align="center">
+  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latex.gif" />
+</p>
 
-![](https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latex.gif?raw=true)
-
-***Note**: This is still an early version and may change significantly. The project will be finished by October 2022.*
+![](?raw=true)
 
 ## Features
 - It's pretty fast!
@@ -15,10 +17,12 @@ GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the edito
 - Anti-Aliasing (with Toggle)
 
 ## Compatibility
-The add-on is tested for Godot 3.5.x and is expected to run on 3.x. Support for Windows and Linux is planned. MacOS is sadly not being tested due to lack of appropriate hardware. A version for Godot 4.x will be provided after its release, if possible.
+The add-on is tested for Godot 3.5.x and is expected to run on 3.x. It supports Windows and Linux. MacOS is sadly not being tested due to lack of appropriate hardware, but pull requests are welcome. A version for Godot 4.x will be provided after its release, if possible.
 
 ## Usage
-![](https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latexDemo.gif?raw=true)
+<p align="center">
+  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latexDemo.gif" />
+</p>
 
 A custom node `LaTeX`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/icon.svg?raw=true)) inheriting from `Sprite` is provided and may be instanced like any other. It has the following properties, which may be updated in the editor or programmatically at runtime
 
@@ -29,8 +33,22 @@ A custom node `LaTeX`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/a
 
 When updating these in the editor, the expression is automatically rendered anew. When updating properties programmatically, you decide yourself when to render by calling the `.Render()` method - to save ressources. Rendering very often (several times a millisecond) may result in errors.
 
+***
+
 There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
-![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/button.gif?raw=true)
+
+<p align="center">
+  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/button.gif" />
+</p>
+
+***
+
+Further, a special node for usage in 3D is provided - `LaTeX3D`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconRed.svg?raw=true)).
+
+<p align="center">
+  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/3D.png" />
+</p>
+
 ***
 
 For a list of LaTeX examples that can be rendered, see [here](https://github.com/kostub/iosMath/blob/master/EXAMPLES.md).
