@@ -58,7 +58,7 @@ A demo is available [here](https://github.com/file-acomplaint/Emmy-s-Adventure).
 ## Installation
 1. Create a Godot Mono project and build a C#-script.
 2. Install from the Godot Asset Store from inside the Engine or by cloning. When including in an existing project, you won't need the `*.godot` and `*.sln`.
-3. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You to integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`.
+3. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`.
 4. Enable the addon in the settings, as usual. You can now create a `LaTeX` node and start your math excapades!
 
 ## License
