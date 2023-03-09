@@ -13,9 +13,8 @@
     <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.1-preview.108"/>
   </ItemGroup>
 
-  <!-- This Include statement for MacOS is a complete blind guess and could not be tested-->
   <ItemGroup Condition=" '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' ">
-    <PackageReference Include="SkiaSharp.NativeAssets.macOS" Version="2.88.1-preview.108" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.1-preview.108"/>
   </ItemGroup>
 
 </Project>
