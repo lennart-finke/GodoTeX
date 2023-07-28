@@ -1,7 +1,7 @@
 # $\text{Godo}\TeX$
 
 
-GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime!
+$\text{Godo}\TeX$ is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime!
 <p align="center">
   <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latex.gif" />
 </p>
@@ -17,7 +17,7 @@ GodoTeX is an add-on to Godot Mono that renders LaTeX expressions - in the edito
 - Anti-Aliasing (with Toggle)
 
 ## Compatibility
-The add-on is tested for Godot 3.5.x and is expected to run on 3.x. It supports Windows and Linux. MacOS is sadly not being tested due to lack of appropriate hardware, but pull requests are welcome. A version for Godot 4.x will be provided after its release, if possible.
+The add-on is tested for Godot 4.1.x and is expected to run on > 4.1. There is also a branch for Godot 3, which was tested for 3.5.x and is expected to run on 3.x. It supports Windows and Linux. MacOS is tested by the community and pull requests are welcome.
 
 ## Usage
 <p align="center">
@@ -61,5 +61,9 @@ A demo is available [here](https://github.com/file-acomplaint/Emmy-s-Adventure).
 3. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`.
 4. Enable the addon in the settings, as usual. You can now create a `LaTeX` node and start your math excapades!
 
+## Disclosure of Funding
+$\text{Godo}\TeX$ was initially funded by the German Government, specifically the Bundesnachrichtendienst, as part of the BND Summer of Code. It is featured on the program's website [here](https://www.bnd.bund.de/DE/Karriere/SummerOfCode/SummerOfCode_node.html).
 ## License
-Licensed under MIT. © 2022 fi-le
+Licensed under MIT. © 2022-2023 fi-le
+
+
