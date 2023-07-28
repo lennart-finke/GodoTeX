@@ -1,7 +1,7 @@
 using Godot;
 
 [Tool]
-public class LaTeX3D : Sprite3D {
+public partial class LaTeX3D : Sprite3D {
 	// The following wordy declarations ensure that changing the properties 
 	// inside the editor causes the expression to re-render.
 	

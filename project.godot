@@ -6,21 +6,23 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-}
+config_version=5
 
 [application]
 
 config/name="GodoTeX"
+config/description="LaTeX rendering in the Godot Engine"
 run/main_scene="res://sample/Environment.tscn"
+config/features=PackedStringArray("4.1", "C#")
 config/icon="res://addons/GodoTeX/icon.svg"
+
+[dotnet]
+
+project/assembly_name="GodoTeX"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/GodoTeX/plugin.cfg" )
+enabled=PackedStringArray("res://addons/GodoTeX/plugin.cfg")
 
 [mono]
 
@@ -33,7 +35,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/defaults/default_clear_color=Color(0.941176, 0.909804, 0.909804, 1)
 quality/filters/sharpen_intensity=1.0
-environment/default_clear_color=Color( 0.941176, 0.909804, 0.909804, 1 )
 quality/filters/msaa=4
 quality/filters/use_fxaa=true

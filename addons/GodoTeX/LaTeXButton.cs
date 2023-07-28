@@ -1,7 +1,7 @@
 using Godot;
 
 [Tool]
-public class LaTeXButton : TextureButton {
+public partial class LaTeXButton : TextureButton {
 	// The following wordy declarations ensure that changing the properties 
 	// inside the editor causes the expression to re-render.
 	
@@ -93,10 +93,10 @@ public class LaTeXButton : TextureButton {
 		
 		this.TexturePressed = texture3;
 		
-		var clickMask = new BitMap();
-		clickMask.Create(new Vector2(texture.Width, texture.Height));
-		clickMask.SetBitRect(new Rect2(0, 35, texture.Width, texture.Height - 70), true);
-		this.TextureClickMask = clickMask;
+		// var clickMask = new BitMap();
+		// clickMask.Create(new Vector2(texture.Width, texture.Height));
+		// clickMask.SetBitRect(new Rect2(0, 35, texture.Width, texture.Height - 70), true);
+		// this.TextureClickMask = clickMask;
 	}
 	
 	public override void _Ready() {
