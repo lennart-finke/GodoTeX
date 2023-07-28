@@ -1,8 +1,7 @@
 using Godot;
 
-
 [Tool]
-public class LaTeX : Sprite {
+public partial class LaTeX : Sprite2D {
 	// The following wordy declarations ensure that changing the properties 
 	// inside the editor causes the expression to re-render.
 	
@@ -85,8 +84,8 @@ public class LaTeX : Sprite {
 		texture.Fill = this.Fill;
 		texture.MathColor = this.MathColor;
 		texture.ShowError = this.ShowError;
-		texture.Render();
-		this.Texture = texture;
+		
+		this.Texture = texture.Render();
 		this.Width = texture.Width;
 		this.Height = texture.Height;
 		this.OffsetX = texture.OffsetX;

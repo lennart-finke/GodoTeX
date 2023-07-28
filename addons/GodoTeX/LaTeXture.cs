@@ -5,7 +5,7 @@ using CSharpMath.Rendering;
 using SkiaSharp;
 
 [Tool]
-public class LaTeXture : ImageTexture {
+public partial class LaTeXture : ImageTexture {
 	public string LatexExpression;
 	public float FontSize = 40f;
 	public Color MathColor = new Color(0,0,0,1);
@@ -20,11 +20,11 @@ public class LaTeXture : ImageTexture {
 	public float OffsetX;
 	public float OffsetY;
 	
-	public void Render() {
-		var r = (byte)(255*this.MathColor.r);
-		var g = (byte)(255*this.MathColor.g);
-		var b = (byte)(255*this.MathColor.b);
-		var a = (byte)(255*this.MathColor.a);
+	public Godot.Texture2D Render() {
+		var r = (byte)(255*this.MathColor.R);
+		var g = (byte)(255*this.MathColor.G);
+		var b = (byte)(255*this.MathColor.B);
+		var a = (byte)(255*this.MathColor.A);
 		
 		var paintStyle = CSharpMath.Rendering.FrontEnd.PaintStyle.Stroke;
 		if (this.Fill) {
@@ -46,8 +46,7 @@ public class LaTeXture : ImageTexture {
 			  png.CopyTo(memoryStream);
 			  image.LoadPngFromBuffer(memoryStream.ToArray());
 			}
-			
-			this.CreateFromImage(image);
+			return LaTeXture.CreateFromImage(image);
 		};
 	}
 }
