@@ -1,7 +1,7 @@
 # $\text{Godo}\TeX$
 
 
-$\text{Godo}\TeX$ is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime!
+$\text{Godo}\TeX$ is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime! Available at the Asset Library for [Godot 4](https://godotengine.org/asset-library/asset/2016) and [3](https://godotengine.org/asset-library/asset/1418).
 <p align="center">
   <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latex.gif" />
 </p>
