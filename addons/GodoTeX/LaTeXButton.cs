@@ -65,9 +65,8 @@ public partial class LaTeXButton : TextureButton {
 		texture.Fill = false;
 		texture.MathColor = this.MathColor;
 		texture.ShowError = this.ShowError;
-		texture.Render();
 		
-		this.TextureNormal = texture;
+		this.TextureNormal = texture.Render();
 		
 		var texture2 = new LaTeXture();
 		texture2.LatexExpression = this.LatexExpression;
@@ -76,10 +75,9 @@ public partial class LaTeXButton : TextureButton {
 		texture2.Fill = true;
 		texture2.MathColor = this.MathColor;
 		texture2.ShowError = this.ShowError;
-		texture2.Render();
 		
-		this.TextureHover = texture2;
-		
+		this.TextureHover = texture2.Render();
+
 		// A bit of a hack, we increase the top spacing in the LaTeX expression
 		// to give a 'pressed down' effect.
 		var texture3 = new LaTeXture();
@@ -89,9 +87,8 @@ public partial class LaTeXButton : TextureButton {
 		texture3.Fill = true;
 		texture3.MathColor = this.MathColor;
 		texture3.ShowError = this.ShowError;
-		texture3.Render();
 		
-		this.TexturePressed = texture3;
+		this.TexturePressed = texture3.Render();
 		
 		// var clickMask = new BitMap();
 		// clickMask.Create(new Vector2(texture.Width, texture.Height));
