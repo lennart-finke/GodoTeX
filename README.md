@@ -3,7 +3,7 @@
 
 $\text{Godo}\TeX$ is an add-on to Godot Mono that renders LaTeX expressions - in the editor and at runtime! Available at the Asset Library for [Godot 4](https://godotengine.org/asset-library/asset/2016) and [3](https://godotengine.org/asset-library/asset/1418).
 <p align="center">
-  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latex.gif" />
+  <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/latex.gif" />
 </p>
 
 ![](?raw=true)
@@ -38,7 +38,7 @@ When updating these in the editor, the expression is automatically rendered anew
 There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
 
 <p align="center">
-  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/button.gif" />
+  <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/button.gif" />
 </p>
 
 ***
@@ -46,7 +46,7 @@ There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blo
 Further, a special node for usage in 3D is provided - `LaTeX3D`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconRed.svg?raw=true)).
 
 <p align="center">
-  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/3D.png" />
+  <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/3D.png" />
 </p>
 
 ***
