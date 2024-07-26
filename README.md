@@ -21,10 +21,10 @@ The add-on is tested for Godot 4.1.x and is expected to run on > 4.1. There is a
 
 ## Usage
 <p align="center">
-  <img src="https://github.com/file-acomplaint/file-acomplaint/blob/main/assets/latexDemo.gif" />
+  <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/latexDemo.gif" />
 </p>
 
-A custom node `LaTeX`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/icon.svg?raw=true)) inheriting from `Sprite` is provided and may be instanced like any other. It has the following properties, which may be updated in the editor or programmatically at runtime
+A custom node `LaTeX`(![](https://github.com/lennart-finke/GodoTeX/blob/main/addons/GodoTeX/icon.svg?raw=true)) inheriting from `Sprite` is provided and may be instanced like any other. It has the following properties, which may be updated in the editor or programmatically at runtime
 
 - **LatexExpression**: A `string` containing the expression to be rendered. If invalid, the corresponding error message will be rendered instead.
 - **FontSize**: A `float`, the font size in points. It essentially controls the resolution of the rendered image. Decrease for better performance, increase for higher fidelity.
@@ -35,7 +35,7 @@ When updating these in the editor, the expression is automatically rendered anew
 
 ***
 
-There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
+There is also a `LaTeXButton`(![](https://github.com/lennart-finke/GodoTeX/blob/main/addons/GodoTeX/iconButton.svg?raw=true)) node for clickable expressions. This behaves like a `TextureButton`.
 
 <p align="center">
   <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/button.gif" />
@@ -43,7 +43,7 @@ There is also a `LaTeXButton`(![](https://github.com/file-acomplaint/GodoTeX/blo
 
 ***
 
-Further, a special node for usage in 3D is provided - `LaTeX3D`(![](https://github.com/file-acomplaint/GodoTeX/blob/main/addons/GodoTeX/iconRed.svg?raw=true)).
+Further, a special node for usage in 3D is provided - `LaTeX3D`(![](https://github.com/lennart-finke/GodoTeX/blob/main/addons/GodoTeX/iconRed.svg?raw=true)).
 
 <p align="center">
   <img src="https://github.com/lennart-finke/lennart-finke/raw/main/assets/3D.png" />
@@ -53,7 +53,7 @@ Further, a special node for usage in 3D is provided - `LaTeX3D`(![](https://gith
 
 For a list of LaTeX examples that can be rendered, see [here](https://github.com/kostub/iosMath/blob/master/EXAMPLES.md).
 
-A demo is available [here](https://github.com/file-acomplaint/Emmy-s-Adventure).
+A demo is available [here](https://github.com/lennart-finke/Emmy-s-Adventure).
 
 ## Installation
 1. Create a Godot Mono project and build a C#-script.
