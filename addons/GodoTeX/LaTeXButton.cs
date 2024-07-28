@@ -61,42 +61,36 @@ public partial class LaTeXButton : TextureButton {
 
 		var texture = new LaTeXture();
 		texture.LatexExpression = this.LatexExpression;
-		texture.FontSize 		= this.FontSize;
-		texture.AntiAliasing 	= this.AntiAliasing;
-		texture.Fill 			= false;
-		texture.MathColor 		= this.MathColor;
-		texture.ShowError 		= this.ShowError;
-		//texture.Render();
+		texture.FontSize = this.FontSize;
+		texture.AntiAliasing = this.AntiAliasing;
+		texture.Fill = false;
+		texture.MathColor = this.MathColor;
+		texture.ShowError = this.ShowError;
 		
-		//this.TextureNormal = texture;
 		this.TextureNormal = texture.Render();
 		
 		
 		
 		var texture2 = new LaTeXture();
-		texture2.LatexExpression 	= this.LatexExpression;
-		texture2.FontSize 			= this.FontSize;
-		texture2.AntiAliasing 		= this.AntiAliasing;
-		texture2.Fill 				= true;
-		texture2.MathColor 			= this.MathColor;
-		texture2.ShowError 			= this.ShowError;
-		//texture2.Render();
+		texture2.LatexExpression = this.LatexExpression;
+		texture2.FontSize = this.FontSize;
+		texture2.AntiAliasing = this.AntiAliasing;
+		texture2.Fill = true;
+		texture2.MathColor = this.MathColor;
+		texture2.ShowError = this.ShowError;
 		
-		//this.TextureHover = texture2;
 		this.TextureHover = texture2.Render();
 		
 		// A bit of a hack, we increase the top spacing in the LaTeX expression
 		// to give a 'pressed down' effect.
 		var texture3 = new LaTeXture();
-		texture3.LatexExpression 	= @"\raisebox{41mu}{}" + this.LatexExpression;
-		texture3.FontSize 			= this.FontSize;
-		texture3.AntiAliasing 		= this.AntiAliasing;
-		texture3.Fill 				= true;
-		texture3.MathColor 			= this.MathColor;
-		texture3.ShowError 			= this.ShowError;
-		//texture3.Render();
+		texture3.LatexExpression = @"\raisebox{41mu}{}" + this.LatexExpression;
+		texture3.FontSize = this.FontSize;
+		texture3.AntiAliasing = this.AntiAliasing;
+		texture3.Fill = true;
+		texture3.MathColor = this.MathColor;
+		texture3.ShowError = this.ShowError;
 		
-		//this.TexturePressed = texture3;
 		this.TexturePressed = texture3.Render();
 		
 		// var clickMask = new BitMap();
