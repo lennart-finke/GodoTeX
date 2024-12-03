@@ -17,7 +17,7 @@ $\text{Godo}\TeX$ is an add-on to Godot Mono that renders LaTeX expressions - in
 - Anti-Aliasing (with Toggle)
 
 ## Compatibility
-The add-on is tested for Godot 4.1.x and is expected to run on > 4.1. There is also a branch for Godot 3, which was tested for 3.5.x and is expected to run on 3.x. It supports Windows and Linux. MacOS is tested by the community and pull requests are welcome.
+The add-on is tested for Godot 4.3.x and is expected to run on > 4.1. There is also a branch for Godot 3, which was tested for 3.5.x and is expected to run on 3.x. It supports MacOS, Windows and Linux. Android is sadly not currently supported, although pertaining PRs are welcome.
 
 ## Usage
 <p align="center">
@@ -56,10 +56,11 @@ For a list of LaTeX examples that can be rendered, see [here](https://github.com
 A demo is available [here](https://github.com/lennart-finke/Emmy-s-Adventure).
 
 ## Installation
-1. Create a Godot Mono project and build a C#-script.
-2. Install from the Godot Asset Store from inside the Engine or by cloning. When including in an existing project, you won't need the `*.godot` and `*.sln`.
-3. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`.
-4. Enable the addon in the settings, as usual. You can now create a `LaTeX` node and start your math excapades!
+0. (Create a Godot Mono project.)
+1. Install GodoTeX from the AssetLib tab. When including in an existing project, you won't need the `*.godot` and `*.sln`. (If warned about conflicts, untick "Ignore asset root directory". This will create a subfolder.)
+2. The add-on depends on [`CSharpMath.SkiaSharp`](https://github.com/verybadcat/CSharpMath), licensed under MIT, as a nuget package. You integrate this into your existing Godot Mono project by copying the `<ItemGroup>`-tags into your project's `.csproj`-file from `GodoTeX.csproj`, directly below the `<PropertyGroup>` tags.. (If you don't yet have a `.csproj` file, create and build a C# script. That will throw errors before copying the tags, since we are fixing the issue in this step.)
+3. Build the C# project.
+4. Enable the addon in the settings, at Project>Project Settings>Plugins. You can now create a `LaTeX` node and start your math excapades!
 
 ## Disclosure of Funding
 $\text{Godo}\TeX$ was initially funded by the German Government, specifically the Bundesnachrichtendienst, as part of the BND Summer of Code. It is featured on the program's website [here](https://www.bnd.bund.de/DE/Karriere/SummerOfCode/SummerOfCode_node.html).
