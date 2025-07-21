@@ -58,6 +58,7 @@ public partial class LaTeXButton : TextureButton {
 	}
 	
 	public void Render() {
+
 		var texture = new LaTeXture();
 		texture.LatexExpression = this.LatexExpression;
 		texture.FontSize = this.FontSize;
@@ -66,7 +67,9 @@ public partial class LaTeXButton : TextureButton {
 		texture.MathColor = this.MathColor;
 		texture.ShowError = this.ShowError;
 		
-		this.TextureNormal = texture.Render();;
+		this.TextureNormal = texture.Render();
+		
+		
 		
 		var texture2 = new LaTeXture();
 		texture2.LatexExpression = this.LatexExpression;
